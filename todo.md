@@ -1,3 +1,5 @@
 - [x] Upload the user-provided profile photograph for website delivery.
 - [x] Place the photograph in the portfolio’s hero composition with the established organic-technology treatment.
 - [x] Verify the responsive presentation and save an updated delivery checkpoint.
+- [x] Correct the Skills-section card and connector alignment on desktop and mobile.
+- [ ] Verify the revised Skills composition and save the update.

@@ -193,7 +193,10 @@ export default function Home() {
             <div className="skill-cluster software"><Code2 size={22} /><p>Software</p><span>Python</span><span>TypeScript</span><span>Web technologies</span></div>
             <div className="skill-cluster ai"><Lightbulb size={22} /><p>AI / Data</p><span>AI experimentation</span><span>Generative AI</span><span>Data concepts</span></div>
             <div className="skill-cluster thinking"><BookOpen size={22} /><p>How I work</p><span>Problem solving</span><span>Design thinking</span><span>Communication</span></div>
-            <svg className="skill-wires" viewBox="0 0 1120 350" fill="none" aria-hidden="true"><path d="M106 112c199 40 114 137 293 137s164-106 355-71 156 12 264-88" /><path d="M208 301c86-120 193-23 312-44 196-33 155 93 431 58" /><circle cx="106" cy="112" r="7"/><circle cx="399" cy="249" r="7"/><circle cx="754" cy="178" r="7"/><circle cx="1018" cy="90" r="7"/></svg>
+            <svg className="skill-wires" viewBox="0 0 1120 350" fill="none" aria-hidden="true">
+              <path d="M182 79C250 79 250 216 309 216h182c89 0 129-137 215-137h181c43 0 33 137 51 137" />
+              <circle cx="182" cy="79" r="6"/><circle cx="309" cy="216" r="6"/><circle cx="491" cy="216" r="6"/><circle cx="706" cy="79" r="6"/><circle cx="887" cy="79" r="6"/><circle cx="938" cy="216" r="6"/>
+            </svg>
           </div>
         </section>
 
