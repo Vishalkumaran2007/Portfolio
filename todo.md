@@ -1,0 +1,3 @@
+- [x] Upload the user-provided profile photograph for website delivery.
+- [x] Place the photograph in the portfolio’s hero composition with the established organic-technology treatment.
+- [x] Verify the responsive presentation and save an updated delivery checkpoint.

@@ -118,6 +118,10 @@ export default function Home() {
             <div className="hero-status status-top">INPUT → PROCESS → OUTPUT</div>
             <div className="arch-image"><img src="/manus-storage/vishalkumaran-hero-organic-circuit_5cb90335.jpg" alt="Abstract engineering notebook composition with circuit traces and waveform details" /></div>
             <div className="signal-stamp"><span>BUILD</span><span>TEST</span><span>LEARN</span></div>
+            <figure className="profile-specimen">
+              <div className="profile-frame"><img src="/manus-storage/vishalkumaran-profile_208cc338.jpg" alt="Portrait of Vishalkumaran V" /></div>
+              <figcaption>PERSON / VISHAL</figcaption>
+            </figure>
             <div className="hero-status status-bottom">SYSTEM_01 · SIGNAL / RESPONSE</div>
           </div>
 
