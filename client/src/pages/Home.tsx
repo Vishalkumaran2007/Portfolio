@@ -19,7 +19,7 @@ import {
   X,
 } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
-import { certificationData, journey, profile, projects, visualAsset } from "@/data/portfolio";
+import { certificationData, journey, portfolioPath, profile, projects, visualAsset } from "@/data/portfolio";
 
 const navItems = [
   ["Home", "#home"],
@@ -181,9 +181,9 @@ export default function Home() {
           <div className="section-head work-head reveal"><div><p className="eyebrow">03 / SELECTED WORK</p><h2 id="work-title">Projects, experiments,<br />and <em>ideas</em> built while learning.</h2></div><p>Selected public work across creative technology, AI, web systems, and information delivery.</p></div>
           <div className="work-list">
             {projects.map((project, index) => <article className={`project-card project-${index + 1} reveal`} key={project.slug}>
-              <a className="project-image" href={`/project/${project.slug}`} aria-label={`Read about ${project.title}`}><img src={project.image} alt={`Abstract visual study for ${project.title}`} /></a>
+              <a className="project-image" href={portfolioPath(`project/${project.slug}`)} aria-label={`Read about ${project.title}`}><img src={project.image} alt={`Abstract visual study for ${project.title}`} /></a>
               <div className="project-meta"><span>{project.number} / {project.eyebrow}</span><span>{project.year}</span></div>
-              <div className="project-content"><div><h3>{project.title}</h3><p>{project.description}</p></div><a className="project-arrow" href={`/project/${project.slug}`} aria-label={`View ${project.title} project`}><ArrowUpRight size={22} /></a></div>
+              <div className="project-content"><div><h3>{project.title}</h3><p>{project.description}</p></div><a className="project-arrow" href={portfolioPath(`project/${project.slug}`)} aria-label={`View ${project.title} project`}><ArrowUpRight size={22} /></a></div>
               <div className="project-foot"><div className="project-tags">{project.technologies.map((tech) => <span key={tech}>{tech}</span>)}</div><span className="project-status">{project.status}</span></div>
             </article>)}
           </div>

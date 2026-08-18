@@ -3,16 +3,16 @@
  */
 import { ArrowLeft, ArrowUpRight, Github } from "lucide-react";
 import { useRoute } from "wouter";
-import { projects, visualAsset } from "@/data/portfolio";
+import { portfolioPath, projects, visualAsset } from "@/data/portfolio";
 
 export default function ProjectDetail() {
-  const [, params] = useRoute("/project/:slug");
+  const [, params] = useRoute(`${import.meta.env.BASE_URL}project/:slug`);
   const project = projects.find((item) => item.slug === params?.slug);
 
   if (!project) {
     return (
       <main className="detail-shell">
-        <a className="back-link" href="/">
+        <a className="back-link" href={portfolioPath()}>
           <ArrowLeft size={16} /> Back to notebook
         </a>
         <p className="annotation">PROJECT / NOT FOUND</p>
@@ -24,7 +24,7 @@ export default function ProjectDetail() {
   return (
     <main className="detail-shell">
       <nav className="detail-nav" aria-label="Project navigation">
-        <a className="back-link" href="/">
+        <a className="back-link" href={portfolioPath()}>
           <ArrowLeft size={16} /> Back to notebook
         </a>
         <span className="annotation">PROJECT_{project.number} / {project.year}</span>

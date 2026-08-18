@@ -46,6 +46,8 @@ export const visualAsset = (fileName: string) =>
     ? `/manus-storage/${manusAssetNames[fileName] ?? fileName}`
     : `${import.meta.env.BASE_URL}assets/${fileName}`;
 
+export const portfolioPath = (path = "") => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+
 export const projects: Project[] = [
   {
     slug: "circuitsight-ai",

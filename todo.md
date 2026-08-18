@@ -15,6 +15,6 @@
 - [x] Inspect and correct the GitHub Pages workflow in the Portfolio repository.
 - [ ] Obtain the full custom domain name before configuring GitHub Pages.
 - [ ] Verify the successful deployment and report the published URL.
-- [ ] Configure the client router for the GitHub Pages `/Portfolio/` base path and redeploy.
+- [x] Configure the client router for the GitHub Pages `/Portfolio/` base path and redeploy.
 - [x] Restore the missing visualAsset export and clear the client module error.
 - [ ] Share the corrected workflow update.
