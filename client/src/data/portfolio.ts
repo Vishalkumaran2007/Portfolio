@@ -32,6 +32,20 @@ export const profile = {
   email: "vishalkumaran2007@gmail.com",
 };
 
+const manusAssetNames: Record<string, string> = {
+  "baby-taste-builder-sound-study.jpg": "baby-taste-builder-sound-study_3b45664d.jpg",
+  "plague-learning-pathway-study.jpg": "plague-learning-pathway-study_80d8ee4b.jpg",
+  "threatbridge-signal-study.jpg": "threatbridge-signal-study_bde1790d.jpg",
+  "vishalkumaran-hero-organic-circuit.jpg": "vishalkumaran-hero-organic-circuit_5cb90335.jpg",
+  "vishalkumaran-profile.jpg": "vishalkumaran-profile_208cc338.jpg",
+  "vv-circuit-monogram.png": "vv-circuit-monogram_182a5919.png",
+};
+
+export const visualAsset = (fileName: string) =>
+  import.meta.env.BASE_URL === "/"
+    ? `/manus-storage/${manusAssetNames[fileName] ?? fileName}`
+    : `${import.meta.env.BASE_URL}assets/${fileName}`;
+
 export const projects: Project[] = [
   {
     slug: "circuitsight-ai",
@@ -43,7 +57,7 @@ export const projects: Project[] = [
       "An intelligent visual electronics laboratory platform for analyzing physical circuits, identifying wiring and component errors, and offering AI-powered correction guidance.",
     technologies: ["Electronics", "AI", "Visual analysis"],
     repository: "https://github.com/Vishalkumaran2007/CircuitSightAI",
-    image: "/manus-storage/vishalkumaran-hero-organic-circuit_5cb90335.jpg",
+    image: visualAsset("vishalkumaran-hero-organic-circuit.jpg"),
     status: "Public repository",
     featured: true,
     notebook: {
@@ -63,7 +77,7 @@ export const projects: Project[] = [
       "An AI-driven personalized learning system designed to adapt content, pace, and teaching methods around a learner’s progress and engagement.",
     technologies: ["TypeScript", "AI", "Learning systems"],
     repository: "https://github.com/Vishalkumaran2007/Plague-V1.0",
-    image: "/manus-storage/plague-learning-pathway-study_80d8ee4b.jpg",
+    image: visualAsset("plague-learning-pathway-study.jpg"),
     status: "Public repository",
     notebook: {
       code: "PATH / 02",
@@ -82,7 +96,7 @@ export const projects: Project[] = [
       "A unified AI-driven security platform concept that connects cybersecurity telemetry with transactional behaviour to surface threats and fraud patterns.",
     technologies: ["TypeScript", "AI", "Security"],
     repository: "https://github.com/Vishalkumaran2007/ThreatBridge",
-    image: "/manus-storage/threatbridge-signal-study_bde1790d.jpg",
+    image: visualAsset("threatbridge-signal-study.jpg"),
     status: "Public repository",
     notebook: {
       code: "SIGNAL / 03",
@@ -102,7 +116,7 @@ export const projects: Project[] = [
     technologies: ["Python", "Streamlit", "AI"],
     repository: "https://github.com/Vishalkumaran2007/baby-taste-builder",
     liveUrl: "https://baby-taste-builder-2-wtcn9d7iyrtbztrvovnrvj.streamlit.app/",
-    image: "/manus-storage/baby-taste-builder-sound-study_3b45664d.jpg",
+    image: visualAsset("baby-taste-builder-sound-study.jpg"),
     status: "Public repository",
     notebook: {
       code: "TASTE / 04",
@@ -121,7 +135,7 @@ export const projects: Project[] = [
       "A news aggregation and summarization website focused on clear and structured information delivery.",
     technologies: ["TypeScript", "Web", "Information"],
     repository: "https://github.com/Vishalkumaran2007/NewsNexus",
-    image: "/manus-storage/vishalkumaran-hero-organic-circuit_5cb90335.jpg",
+    image: visualAsset("vishalkumaran-hero-organic-circuit.jpg"),
     status: "Public repository",
     notebook: {
       code: "NEWS / 05",

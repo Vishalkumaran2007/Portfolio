@@ -36,6 +36,11 @@ jobs:
       - name: Build the portfolio
         run: pnpm vite build --base=/Portfolio/
 
+      - name: Package portfolio images
+        run: |
+          mkdir -p dist/public/assets
+          cp -R static-assets/. dist/public/assets/
+
       - name: Upload the GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

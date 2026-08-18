@@ -19,7 +19,7 @@ import {
   X,
 } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
-import { certificationData, journey, profile, projects } from "@/data/portfolio";
+import { certificationData, journey, profile, projects, visualAsset } from "@/data/portfolio";
 
 const navItems = [
   ["Home", "#home"],
@@ -52,7 +52,7 @@ function ThemeToggle() {
 function Wordmark() {
   return (
     <a className="wordmark" href="#home" aria-label="Vishalkumaran V home">
-      <img src="/manus-storage/vv-circuit-monogram_182a5919.png" alt="" />
+      <img src={visualAsset("vv-circuit-monogram.png")} alt="" />
       <span>Vishalkumaran <i>V</i></span>
     </a>
   );
@@ -119,10 +119,10 @@ export default function Home() {
 
           <div className="hero-visual reveal">
             <div className="hero-status status-top">INPUT → PROCESS → OUTPUT</div>
-            <div className="arch-image"><img src="/manus-storage/vishalkumaran-hero-organic-circuit_5cb90335.jpg" alt="Abstract engineering notebook composition with circuit traces and waveform details" /></div>
+            <div className="arch-image"><img src={visualAsset("vishalkumaran-hero-organic-circuit.jpg")} alt="Abstract engineering notebook composition with circuit traces and waveform details" /></div>
             <div className="signal-stamp"><span>BUILD</span><span>TEST</span><span>LEARN</span></div>
             <figure className="profile-specimen">
-              <div className="profile-frame"><img src="/manus-storage/vishalkumaran-profile_208cc338.jpg" alt="Portrait of Vishalkumaran V" /></div>
+              <div className="profile-frame"><img src={visualAsset("vishalkumaran-profile.jpg")} alt="Portrait of Vishalkumaran V" /></div>
               <figcaption>PERSON / VISHAL</figcaption>
             </figure>
             <div className="hero-status status-bottom">SYSTEM_01 · SIGNAL / RESPONSE</div>
@@ -212,7 +212,7 @@ export default function Home() {
         </section>
 
         <section className="github-cta section" aria-labelledby="github-title">
-          <div className="github-visual reveal"><img src="/manus-storage/vv-circuit-monogram_182a5919.png" alt="Vishalkumaran V circuit monogram" /><span>PUBLIC / 2026</span></div>
+          <div className="github-visual reveal"><img src={visualAsset("vv-circuit-monogram.png")} alt="Vishalkumaran V circuit monogram" /><span>PUBLIC / 2026</span></div>
           <div className="github-copy reveal"><p className="eyebrow">06 / BUILT IN PUBLIC</p><h2 id="github-title">More field notes<br />live on <em>GitHub.</em></h2><p>Repositories, experiments, and ideas are documented in public as they evolve.</p><a className="button button-primary" href={profile.github} target="_blank" rel="noreferrer"><Github size={16} /> Explore GitHub <ArrowUpRight size={16} /></a></div>
         </section>
 

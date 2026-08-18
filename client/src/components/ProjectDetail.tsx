@@ -3,7 +3,7 @@
  */
 import { ArrowLeft, ArrowUpRight, Github } from "lucide-react";
 import { useRoute } from "wouter";
-import { projects } from "@/data/portfolio";
+import { projects, visualAsset } from "@/data/portfolio";
 
 export default function ProjectDetail() {
   const [, params] = useRoute("/project/:slug");
@@ -68,7 +68,7 @@ export default function ProjectDetail() {
       </section>
 
       <section className="project-instruments" aria-label="Project field notes">
-        <div className="instrument-stamp"><img src="/manus-storage/vv-circuit-monogram_182a5919.png" alt="" /><span>FIELD<br />ENTRY</span></div>
+        <div className="instrument-stamp"><img src={visualAsset("vv-circuit-monogram.png")} alt="" /><span>FIELD<br />ENTRY</span></div>
         <div className="instrument-copy"><p className="annotation">02 / OBSERVATION SET</p><h2>Signals recorded<br />for this <em>study.</em></h2></div>
         <div className="observation-list">
           {project.notebook.observations.map((observation, index) => <div key={observation}><span>0{index + 1}</span><b>{observation}</b><i /></div>)}
