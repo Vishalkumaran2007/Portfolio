@@ -12,6 +12,7 @@ import {
   GraduationCap,
   Lightbulb,
   Linkedin,
+  Mail,
   Menu,
   Moon,
   Sun,
@@ -83,6 +84,7 @@ export default function Home() {
           <div className="nav-actions">
             <a className="nav-social" href={profile.github} target="_blank" rel="noreferrer" aria-label="Visit GitHub"><Github size={17} /></a>
             <a className="nav-social" href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="Visit LinkedIn"><Linkedin size={17} /></a>
+            <a className="nav-social" href={`mailto:${profile.email}`} aria-label="Send an email"><Mail size={17} /></a>
             <ThemeToggle />
             <button className="menu-trigger" type="button" onClick={() => setMenuOpen(true)} aria-label="Open site menu"><Menu size={22} /></button>
           </div>
@@ -97,6 +99,7 @@ export default function Home() {
         <div className="mobile-menu-foot">
           <a href={profile.github} target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={14} /></a>
           <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={14} /></a>
+          <a href={`mailto:${profile.email}`}>Email <ArrowUpRight size={14} /></a>
           <ThemeToggle />
         </div>
       </div>
@@ -215,11 +218,11 @@ export default function Home() {
 
         <section className="contact section" id="contact" aria-labelledby="contact-title">
           <CircuitLine className="contact-line" />
-          <div className="contact-inner reveal"><p className="eyebrow">07 / OPEN TO CONNECTION</p><h2 id="contact-title">Let&apos;s build<br /><em>something.</em></h2><p>Have an internship opportunity, project idea, hackathon concept, or simply want to connect?</p><div className="contact-actions"><a className="button button-primary" href={profile.linkedin} target="_blank" rel="noreferrer"><Linkedin size={16} /> Connect on LinkedIn</a><a className="button button-secondary" href={profile.github} target="_blank" rel="noreferrer"><Github size={16} /> GitHub</a></div></div>
+          <div className="contact-inner reveal"><p className="eyebrow">07 / OPEN TO CONNECTION</p><h2 id="contact-title">Let&apos;s build<br /><em>something.</em></h2><p>Have an internship opportunity, project idea, hackathon concept, or simply want to connect?</p><div className="contact-actions"><a className="button button-primary" href={`mailto:${profile.email}`}><Mail size={16} /> Email me</a><a className="button button-secondary" href={profile.linkedin} target="_blank" rel="noreferrer"><Linkedin size={16} /> LinkedIn</a><a className="button button-secondary" href={profile.github} target="_blank" rel="noreferrer"><Github size={16} /> GitHub</a></div><a className="contact-email" href={`mailto:${profile.email}`}>{profile.email} <ArrowUpRight size={14} /></a></div>
         </section>
       </main>
 
-      <footer className="site-footer"><Wordmark /><div><span>{profile.degree}</span><span>{profile.academicStatus}</span></div><p>Built with curiosity. <b>© 2026 Vishalkumaran V</b></p></footer>
+      <footer className="site-footer"><Wordmark /><div><span>{profile.degree}</span><span>{profile.academicStatus}</span></div><a className="footer-email" href={`mailto:${profile.email}`}>{profile.email}</a><p>Built with curiosity. <b>© 2026 Vishalkumaran V</b></p></footer>
     </div>
   );
 }

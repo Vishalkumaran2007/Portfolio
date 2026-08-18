@@ -2,4 +2,6 @@
 - [x] Place the photograph in the portfolio’s hero composition with the established organic-technology treatment.
 - [x] Verify the responsive presentation and save an updated delivery checkpoint.
 - [x] Correct the Skills-section card and connector alignment on desktop and mobile.
-- [ ] Verify the revised Skills composition and save the update.
+- [x] Verify the revised Skills composition and save the update.
+- [x] Add the verified email address to the portfolio contact and navigation links.
+- [x] Verify the email actions and save the update.

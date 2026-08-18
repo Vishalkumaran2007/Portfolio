@@ -29,6 +29,7 @@ export const profile = {
   academicStatus: "2nd Year · 3rd Semester",
   github: "https://github.com/Vishalkumaran2007",
   linkedin: "https://www.linkedin.com/in/vishalkumaran/",
+  email: "vishalkumaran2007@gmail.com",
 };
 
 export const projects: Project[] = [
