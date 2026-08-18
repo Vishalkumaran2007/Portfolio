@@ -5,3 +5,6 @@
 - [x] Verify the revised Skills composition and save the update.
 - [x] Add the verified email address to the portfolio contact and navigation links.
 - [x] Verify the email actions and save the update.
+- [ ] Confirm the GitHub repository destination named Portfolio.
+- [ ] Upload the completed portfolio source to GitHub.
+- [ ] Verify the repository contents and share the link.
