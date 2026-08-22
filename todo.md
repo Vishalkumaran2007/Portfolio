@@ -14,7 +14,9 @@
 - [x] Share the corrected workflow update.
 - [x] Inspect and correct the GitHub Pages workflow in the Portfolio repository.
 - [ ] Obtain the full custom domain name before configuring GitHub Pages.
-- [ ] Verify the successful deployment and report the published URL.
+- [x] Verify the successful deployment and report the published URL.
 - [x] Configure the client router for the GitHub Pages `/Portfolio/` base path and redeploy.
 - [x] Restore the missing visualAsset export and clear the client module error.
+- [x] Add a GitHub Pages fallback so direct project URLs resolve to the portfolio application.
+- [ ] Verify the CircuitSight AI project link and share the corrected deployment.
 - [ ] Share the corrected workflow update.
